@@ -1,7 +1,5 @@
 from flask import Flask, jsonify
 from sqlalchemy import create_engine
-from datetime import datetime
-from flask_restx import Api, Namespace, Resource, reqparse, inputs, fields
 
 user = "schedulin"
 passw = "MySQLIsFun"
