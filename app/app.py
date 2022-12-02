@@ -1,8 +1,7 @@
 from flask import Flask, jsonify
 from sqlalchemy import create_engine
 from datetime import datetime
-from flask_restx import Api, Namespace, Resource, \
-    reqparse, inputs, fields
+from flask_restx import Api, Namespace, Resource, reqparse, inputs, fields
 
 user = "schedulin"
 passw = "MySQLIsFun"
@@ -29,7 +28,7 @@ def disconnect(conn):
     conn.close()
 
 @app.route('/users')
-def get_users(Resource):
+def get_users():
     connection = connect()
     select = """
         SELECT *
